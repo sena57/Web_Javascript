@@ -1,0 +1,30 @@
+div {
+    margin: 5px;
+}
+
+.first {
+    background-color: blue;
+}
+
+.second {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+}
+
+.third {
+    background-color: aquamarine;
+    position: absolute;
+    bottom:0px
+}
+
+.fourth {
+    background-color: brown;
+
+}
+
+.leer {
+    height: 500vh;
+    position: relative;
+    background-color: pink;
+}
