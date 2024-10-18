@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 18px;
+            --font-size-big:1.5rem;
+            --font-size-normal:0.8rem;
+        }
+        .screen{
+            background-color: aqua;
+            margin: 20px;
+            height: 300px;
+            width: 400px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .welcome{
+            font-size: var(--font-size-big);
+            font-weight: 800;
+        }
+
+        .numbers{
+            font-size: var(--font-size-normal);
+            margin: 20px;
+        }
+
+        .orangesquare{
+            position: absolute;
+            background-color: orangered;
+            height: 100px;
+            width: 100px;
+            right: 0;
+            bottom: 0;
+        }
+
+        .violettsquare{
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .yellow{
+            width: auto;
+            height: 200px;
+            background-color: yellow;
+            margin-top: 30px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            align-items: center;
+        }
+
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="welcome">Wilkommen!</div>
+        <div class="numbers">Eins</div>
+        <div class="numbers">Zwei</div>
+        <div class="numbers">Drei</div>
+        <div class="orangesquare"></div>
+    </div>
+
+    <div class="violettsquare"></div>
+
+    <div class="yellow">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
