@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssreset.css">
+    <style>
+        .invisible {
+            width: auto;
+            display: flex ;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blue{
+            background-color: lightskyblue;
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .red1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .red2{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .green{
+            background-color: green;
+            position: relative;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .black{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="invisible">
+        <div class="blue">
+            <div class="red1"></div>
+        </div>
+        <div class="blue">
+            <div class="red2"></div>
+        </div>
+    </div>
+
+    <div class="green">
+        <div class="black"></div>
+    </div>
+</body>
+</html>
