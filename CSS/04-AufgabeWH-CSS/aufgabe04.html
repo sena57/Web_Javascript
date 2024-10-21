@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssreset.css">
+    <style>
+        .blue{
+            background-color: lightblue;
+            width: 400px;
+            height: 400px;
+            margin: 40px;
+            position: relative;
+        }
+
+        .green{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .black{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -20px;
+            left: -20px;
+        }
+
+        .border{
+            border: solid;
+            width: auto;
+            height: 100px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            align-items: center;
+        }
+
+        .minigreen{
+            background-color: green;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue">
+        <div class="black"></div>
+        <div class="green"></div>
+    </div>
+
+    <div class="border">
+        <div class="minigreen"></div>
+        <div class="minigreen"></div>
+        <div class="minigreen"></div>
+    </div>
+
+</body>
+</html>
