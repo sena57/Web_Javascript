@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssreset.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            grid-auto-rows: minmax(60px, auto);
+            column-gap: 1px;
+            row-gap: 1px;
+        }
+
+        .green{
+            background-color: green;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .minigreen{
+            background-color: greenyellow;
+            width: 100px;
+            height: 100px;
+        }
+
+        .blue{
+            background-color: lightskyblue;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .box1{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box2{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="green">
+            <div class="minigreen"></div>
+        </div>
+        <div class="green">
+            <div class="minigreen"></div>
+        </div>
+        <div class="green">
+            <div class="minigreen"></div>
+        </div>
+    </div>
+
+    <div class="blue">
+        <div class="black box1"></div>
+        <div class="black box2"></div>
+    </div>
+</body>
+</html>
