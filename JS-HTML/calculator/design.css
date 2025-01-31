@@ -1,0 +1,36 @@
+#rechnungen{
+    display: flex;
+    justify-content:left;
+}
+
+#subtrahieren{
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+#addieren{
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+#dividieren{
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+#multiplizieren{
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+}
