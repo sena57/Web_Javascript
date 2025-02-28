@@ -1,23 +1,26 @@
-document.getElementById("btnLoad").addEventListener("click", function() {
-    loadData();
+alert("funktioniert")
+
+document.getElementById("btnLoad").addEventListener("click", function () {
+  loadData();
 });
 
 function loadData() {
-    fetch("https://67b84594699a8a7baef35dc4.mockapi.io/todo")
-     .then(response => response.json())
-     .then(json => {
-        console.log(json);
+  fetch("https://5e391b0baad2220014962337.mockapi.io/swp/todos")
+    .then((response) => response.json())
+    .then((json) => {
+      let html = [];
 
-        /* let html = "";
-         json.forEach(todo => {
-            html.push("<div><div>" + 
-                todo.title + 
-                "</div><img src='" + 
-                todo.responsibility + 
-                "?id=" +
-                 Math.random() +
-                "' /></div></div>");
-         });
-         document.getElementById("content").innerHTML = html.join;*/
-     })
+      json.forEach((todo) => {
+        html.push(
+          "<div><div>" +
+            todo.title +
+            "</div><img width='50px' src='" +
+            todo.image +
+            "?id=" +
+            Math.random() +
+            " '/></div>"
+        );
+      });
+      document.getElementById("content").innerHTML = html.join("");
+    });
 }
