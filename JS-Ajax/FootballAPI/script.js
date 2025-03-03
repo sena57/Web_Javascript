@@ -23,15 +23,19 @@ document.getElementById("table").addEventListener("click", function(event) {
 });
 
 function getNextMatchForTeam(teamId) {
-    fetch(`https://api.openligadb.de/getmatchdata/bl1/2024/${teamId}`)
+  const url = `https://api.openligadb.de/getnextmatchbyleagueteam/4741/${teamId}`
+  console.log(url);
+  
+    fetch(url)
       .then((response) => response.json())
       .then((json) => {
+        console.log("inside fetch match")
         console.log(json);
         let html = "<div id='nextMatch'>";
-        html += `<div>${json.matchDate}</div>`;
-
-        html += `<div><img src="${json.team1.teamIconUrl}"/>${json.team1.teamName} vs. ${json.team2.teamName}</div>`;
+        html += `<div>${json.matchDateTime}</div>`;
+        html += `</div><img width="30px" src="${json.team1.teamIconUrl}"/>${json.team1.teamName} vs. ${json.team2.teamName} <img width="30px" src="${json.team2.teamIconUrl}"/></div>`;
         html += "</div>";
+
         document.getElementById("nextMatch").innerHTML = html;
       });  
 }
