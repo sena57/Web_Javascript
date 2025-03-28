@@ -1,11 +1,8 @@
 import React from 'react'
 
-export default function List(item) {
+export default function List() {
   return (
     <div>
-        <ul>
-            <li><p>{item}</p></li>
-        </ul>
     </div>
   )
 }
