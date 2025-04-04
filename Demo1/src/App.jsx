@@ -6,7 +6,6 @@ import Card from './components/Card'
 import List from './components/List'
 import Button from './components/Button'
 
-
 function App() {
   const [count, setCount] = useState(0)
 
