@@ -14,6 +14,7 @@ function App() {
     <>
         <h1 className='bg-green-400 p-4 text-center'>Hello</h1>
         <div className='flex flex-col items-start'>
+          <List />
           <Card name={"Lenz"} jobtitle={"AV"} />
           <Card name={"Riedmann"} jobtitle={"Lehrer"} />
           <Button name={"Sendar"}/>
